@@ -70,6 +70,7 @@ header {
   color: white;
   border: 1px solid rgb(41, 209, 41);
 }
+
 .cv-button {
   background-color: white;
   border-radius: 7px;
@@ -353,6 +354,15 @@ a {
   box-shadow: 4px 5px 20px rgb(195, 195, 195);
   border-radius: 13px;
   max-width: 39vw;
+}
+
+footer {
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(13, 94, 30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 450px) and (max-height: 960px) {
   .intro-container {

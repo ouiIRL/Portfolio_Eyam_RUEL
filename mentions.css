@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(44, 177, 44);
+}
+
+header {
+  width: 100vw;
+  height: 60px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /*compatibilité Safari/IOS*/
+  position: fixed;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-ul ul {
+  display: flex;
+  gap: 5px;
+  color: rgb(44, 177, 44);
+  justify-content: center;
+}
+
+.header-ul ul li {
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+}
+
+.header-ul ul li:hover {
+  background-color: rgba(157, 236, 193, 0.15);
+  color: rgb(47, 131, 47);
+  transition-duration: 0.5s;
+}
+
+.header-ul {
+  display: flex;
+  align-items: center;
+}
+.contact-button {
+  background-color: rgb(41, 209, 41);
+  border-radius: 7px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgb(41, 209, 41);
+}
+
+.cv-button {
+  background-color: white;
+  border-radius: 7px;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(41, 209, 41);
+  border: 1px solid rgb(41, 209, 41);
+}
+
+p,
+.dark-green,
+h3,
+label {
+  color: rgb(36, 119, 36);
+}
+
+h3 {
+  margin-bottom: 30px;
+}
+
+#contact-desc {
+  margin-bottom: 40px;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: rgb(41, 209, 41);
+  border: 1px solid rgb(41, 209, 41);
+  transition-duration: 0.2s;
+}
+
+.cv-button:hover {
+  background-color: rgb(41, 209, 41);
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.legal-section {
+  height: auto !important;
+  min-height: 100vh;
+  padding-top: 100px; /* Espace pour ne pas être caché par le header fixe */
+  padding-bottom: 50px;
+  background-color: rgb(202, 255, 226); /* Ton fond vert habituel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Le conteneur blanc/vert style "carte" */
+.legal-container {
+  background-color: rgb(221, 255, 236);
+  width: 90%;
+  max-width: 800px; /* Pour ne pas que les lignes soient trop longues à lire */
+  padding: 40px;
+  border-radius: 13px;
+  box-shadow: 4px 5px 20px rgb(195, 195, 195);
+  border: 1px solid rgb(146, 219, 180);
+  text-align: left; /* Texte aligné à gauche pour la lecture */
+}
+
+.legal-container h1 {
+  text-align: center;
+  color: rgb(3, 59, 3);
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+.legal-container h2 {
+  text-align: left; /* Titres de section à gauche */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: rgb(13, 94, 30);
+  border-bottom: 2px solid rgb(146, 219, 180); /* Petite ligne de séparation */
+  padding-bottom: 5px;
+}
+
+.legal-container p,
+.legal-container li {
+  line-height: 1.6; /* Plus d'espace entre les lignes pour la lisibilité */
+  color: rgb(36, 119, 36);
+  margin-bottom: 10px;
+}
+
+.legal-container ul {
+  list-style-type: disc; /* Puces rondes */
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Boite spécifique pour les détails techniques (cookies/form) */
+.legal-sub-box {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.legal-footer {
+  text-align: center;
+  margin-top: 50px;
+}
