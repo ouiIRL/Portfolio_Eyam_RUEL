@@ -28,11 +28,14 @@ header {
 }
 
 .logo {
-  width: 107.667px;
-  height: 107.667px;
-  position: absolute;
-  top: -15px;
-  left: 0px;
+  width: 60px;
+  height: 60px;
+  position: static;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
 }
 
 .header-ul ul {
@@ -99,7 +102,8 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 80px 0;
 }
 
 .intro-container {
@@ -363,11 +367,87 @@ footer {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 450px) and (max-height: 960px) {
-  .intro-container {
-    background-color: rgb(0, 136, 255);
+@media screen and (max-width: 900px) {
+  /* --- HEADER --- */
+  .header-container {
+    padding: 0 10px;
   }
-  body {
-    background-color: black;
+
+  /* On cache le menu du milieu sur mobile pour gagner de la place */
+  .header-ul {
+    display: none;
+  }
+
+  /* --- TEXTES --- */
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* --- SECTION "QUI SUIS-JE" (About Me) --- */
+  .bottom-container {
+    flex-direction: column; /* On empile les blocs l'un sur l'autre */
+    width: 90%;
+    align-items: center;
+  }
+
+  .bottom-container-left,
+  .bottom-container-right {
+    width: 100%; /* Ils prennent toute la largeur */
+  }
+
+  /* --- CARTES (Compétences & Projets) --- */
+  .competenceAndProjet {
+    flex-direction: column; /* On empile les cartes */
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%; /* La carte prend 90% de la largeur de l'écran */
+    height: auto; /* La hauteur s'adapte au contenu */
+    min-height: 250px;
+    padding-bottom: 20px;
+  }
+
+  /* Pour que les images des projets ne soient pas déformées */
+  .imgProjet {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /*  SECTION CONTACT  */
+  .contact {
+    height: auto; /* On laisse la section grandir */
+  }
+
+  .contact-container {
+    flex-direction: column; /* Le formulaire passe au-dessus des liens */
+    width: 90vw;
+    gap: 40px;
+  }
+
+  /* Le formulaire */
+  form {
+    width: 100%;
+  }
+
+  /* La boite de liens à côté */
+  .links {
+    width: 100%;
+    max-width: 100%;
+    align-self: center;
+  }
+
+  #form-message {
+    width: 100%;
+    min-width: 100%;
   }
 }
